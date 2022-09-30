@@ -1,0 +1,39 @@
+//Variables
+
+//Font -family
+$font-Header-family : 'Anton', sans-serif;;
+$font-text-family :'Montserra', sans-serif;;
+//'Work Sans', sans-serif;
+
+
+//Font -size
+$h1-size : 64px;
+$h2-size: 36px;
+$p-size : 12px;
+$nav-font-size : 24px;
+
+//Color
+$primary-color : #12395D;
+$secondary-color : #7DB0DE;
+$tritary-color : #1D5C96;
+$header-bg-color : rgba(125, 176, 222, 20%);
+$header-avtic-bg-color : rgba(225  , 225, 225, 80%);
+$hero-bg-color : rgba(29, 92, 150, 82%);
+$modal_bg :  rgba(0, 0, 0, 60%);
+
+//mixin
+@mixin nav-text {
+    font-family: $font-Header-family;
+    font-size: $nav-font-size;
+    color: $primary-color;
+}
+
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+//box-shadow
+$shadow : rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;

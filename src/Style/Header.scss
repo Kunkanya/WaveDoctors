@@ -1,0 +1,130 @@
+@use '../Style/abstracts/Variables.scss' as *;
+
+.navBar-container {
+    position: sticky;
+    top:0;
+    left:0;
+}
+nav {
+	background-color: $tritary-color;
+    width: 100%;
+    position: fixed;
+    top:0;
+    box-shadow: $shadow;
+}
+.nav-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+
+	max-width: 1280px;
+	padding: 0 30px;
+	margin: 0 auto;
+
+}
+
+.nav-brand {
+width: 70px;
+margin: 0.5rem;
+}
+
+.menu {
+	display: none;
+	justify-content: flex-end;
+}
+
+.menu a {
+	padding: 8px 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	border-radius: 90px;
+    color: $primary-color;
+}
+
+.menu a:hover {
+	color: white;
+	background-color: $primary-color;
+}
+
+.hamburger {
+	display: block;
+	user-select: none;
+	appearance: none;
+
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+}
+
+.hamburger span {
+	display: block;
+	width: 33px;
+	height: 4px;
+	margin-bottom: 5px;
+background-color: $primary-color;
+	border-radius: 6px;
+
+	transform-origin: 0 0;
+	transition: 0.4s;
+}
+
+.hamburger:hover span:nth-child(2) {
+	transform: translateX(10px);
+	background-color: $secondary-color;
+}
+
+.active-hamburger:hover span {
+	background-color: $primary-color;
+}
+.active-hamburger span:nth-child(1) {
+	transform: translate(0px, -2px) rotate(44deg);
+}
+.active-hamburger span:nth-child(2) {
+	transform: translate(0px, -2px) rotate(44deg);
+	opacity: 0;
+}
+.active-hamburger span:nth-child(3) {
+	transform: translate(-2px, 5px) rotate(-44deg);
+}
+
+.nav-dropdown {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	width: 100vw;
+	padding: 10px 0;
+	background-color: $tritary-color;
+    position: fixed;
+    top:60px;
+}
+.nav-dropdown a {
+	padding: 8px 16px;
+	margin: 0 16px;
+
+	text-decoration: none;
+	color:white;
+	text-transform: uppercase;
+	font-weight: 500;
+	border-radius: 90px;
+}
+.nav-dropdown a:hover {
+	color: $primary-color;
+	background-color: white;
+}
+
+@media (min-width: 768px) {
+	.hamburger {
+		display: none;
+	}
+	.menu {
+		display: block;
+	}
+
+	.nav-dropdown {
+		display: none;
+	}
+}

@@ -1,0 +1,84 @@
+@use '../Style/abstracts/Variables.scss' as *;
+
+.header {
+    margin: auto;
+    padding: 1em;
+    width: 95%;
+    height: 90px;
+    //background-color: $header-bg-color;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 5%;
+
+
+    &__section {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @include nav-text;
+    }
+
+    &__logo {
+        width: 100px;
+        padding: 0.5rem;
+    }
+
+    .navDesktop {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: red;
+
+        ul {
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            li {
+                margin: 30px;
+                border: solid transparent 3px;
+                cursor: pointer;
+
+                &:hover {
+                    border-bottom: solid 3px $primary-color;
+                    color: $tritary-color;
+                   transition:  linear 300ms; 
+                }
+            }
+
+        }
+
+    }
+
+    &__member {
+        padding: 5px;
+        margin-right: 1em;
+        cursor: pointer;
+        &:hover{
+            color:$tritary-color;
+            border: solid 2px $tritary-color;
+        }
+    }
+}
+
+.active{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 6px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    width: 100vw;
+    height: 90px;
+    position: fixed;
+    top:0;
+    left:0;
+transition: width  linear 0.5s;
+z-index: 999;
+}
+
+.logo{
+    width: 100px;
+}

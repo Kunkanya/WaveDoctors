@@ -1,0 +1,156 @@
+
+{
+    "mainMembers": [
+        {
+            "id": "1",
+            "name": "Dr. Francis Remmer",
+            "position": "Président de l'association WaveDoctors",
+            "workPlace": "Centre Hospitalier de Dax - Côte d'Argent, France",
+            "photo":"",
+            "education": [
+                "Médecin anesthésiste-réanimateur et urgentiste.",
+                "Médecin de la fédération allemande de surf.",
+                "Médecin de montagne et d'expédition."
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Dr. Kévin Quesnel",
+            "position": "Vice-président de l'association Wavedoctors",
+            "workPlace": "Centre Hospitalier de la Côte Basque, France",
+            "photo":"asset/Team/kevin.png",
+            "education": [
+                "Médecin réanimateuret urgentiste",
+                "Médecin de montagne et d'expédition"
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Dr. Benjamin Oberpeilsteiner",
+            "position": "Trésorier de l'association Wavedoctors",
+            "workPlace": "Centre Hospitalier de Dax - Côte d'Argent, France",
+            "photo":"asset/Team/ben.jpg",
+            "education": ["Médecin anesthésiste-réanimateur."]
+        },
+        {
+            "id": "4",
+            "name": "Dr. Christina Wende",
+            "position": "Trésorière adjointe de l'association Wavedoctors",
+            "workPlace": "Centre Hospitalier Universitaire Poite-à-Pitre, Guadeloupe, France",
+            "photo":"asset/Team/Christina.jpeg",
+            "education": ["Chirurgien orthopédiste et médecin du sport."
+        ]},
+        {
+            "id": "5",
+            "name": "Axelle Brassart",
+            "position": "secrétaire de l'association Wavedoctors",
+            "workPlace": "Centre Hospitalier de Dax - Côte d'Argent, France",
+            "education": ["Infirmière anesthésiste diplômée d'état."]
+        },
+        {
+            "id": "6",
+            "name": "Dr. Alexandre Wittig",
+            "position": "Secrétaire adjoint de l'association Wavedoctors",
+            "workPlace": "Centre Hospitalier de Dax - Côte d'Argent, France",
+            "education": ["Médecin anesthésiste-réanimateur."]
+        },
+        {
+            "id": "7",
+            "name": "Prof. Maurice balke",
+            "position": "Membre",
+            "workPlace": "Allemagne",
+            "education": [""]
+        },
+        {
+            "id": "8",
+            "name": "Michael Zirlewagen",
+            "position": "Membre",
+            "workPlace": "Allemagne",
+            "education": [""]
+        },
+        {
+            "id": "9",
+            "name": "Karl Burr",
+            "position": "Membre",
+            "workPlace": "Allemagne",
+            "education": [""]
+        }
+    ],
+    "jointMembers": [
+        {
+            "name": "Maurice",
+            "position": "Président de l'association WaveDoctors",
+            "workPlace": "CHU DAX, France",
+            "photo":"asset/Team/maurice.jpg",
+            "education": ["Médecin anesthésiste-réanimateur."]
+        }
+    ],
+    "events":[
+
+        {
+            "photoId" : "1",
+            "photoName" : "name 1",
+            "path" : "asset/events/1.jpg" 
+        },
+        {
+            "photoId" : "2",
+            "photoName" : "name 2",
+            "path" : "asset/events/2.jpg" 
+        },
+        {
+            "photoId" : "3",
+            "photoName" : "name 3",
+            "path" : "asset/events/3.jpg" 
+        },
+        {
+            "photoId" : "4",
+            "photoName" : "name 4",
+            "path" : "asset/events/4.jpg" 
+        },
+        {
+            "photoId" : "5",
+            "photoName" : "name 5",
+            "path" : "asset/events/5.jpg" 
+        },
+        {
+            "photoId" : "6",
+            "photoName" : "name 6",
+            "path" : "asset/events/6.jpg" 
+        },
+        {
+            "photoId" : "7",
+            "photoName" : "name 7",
+            "path" : "asset/events/7.jpg" 
+        },
+        {
+            "photoId" : "8",
+            "photoName" : "name 8",
+            "path" : "asset/events/8.jpg" 
+        },
+        {
+            "photoId" : "9",
+            "photoName" : "name 9",
+            "path" : "asset/events/9.jpg" 
+        },
+        {
+            "photoId" : "11",
+            "photoName" : "name 11",
+            "path" : "asset/events/11.jpg" 
+        },
+        {
+            "photoId" : "12",
+            "photoName" : "name 12",
+            "path" : "asset/events/12.jpg" 
+        },
+        {
+            "photoId" : "13",
+            "photoName" : "name 13",
+            "path" : "asset/events/13.jpg" 
+        },
+        {
+            "photoId" : "14",
+            "photoName" : "name 14",
+            "path" : "asset/events/14.jpg" 
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+@forward '../Style/abstracts/variables.scss';
+
+:root {
+  margin: 0;
+  padding:0;
+}
+
+
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+code {
+  font-family: Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+ul{
+  list-style-type: none;
+}
+ul li a{
+  text-decoration: none;
+}

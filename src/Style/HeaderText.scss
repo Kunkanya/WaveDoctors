@@ -1,0 +1,30 @@
+@use '../Style/abstracts/Variables.scss' as *;
+
+.headerText {
+    font-family: $font-Header-family ;
+    font-size: $h1-size ;
+    color: $primary-color;
+    width: 5%;
+    width: fit-content;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 0;
+
+
+    &:after {
+        content: '';
+        display: block;
+        height: 10px;
+        background-color: $secondary-color;
+        width: 100px;
+        position: absolute;
+        right: 0;
+    }
+
+    @media (max-width: 700px) {
+
+        font-size: 40px;
+        
+    }
+}
