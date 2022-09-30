@@ -29,7 +29,7 @@ function Navbar() {
   window.addEventListener('resize', showButton);
 
   return (
-
+<>
       <nav className='navbar fixed-top'>
         <div className='navbar-container'>
           <a className="navbar-logo" href='#hero-section' onClick={closeMobileMenu}>
@@ -61,6 +61,7 @@ function Navbar() {
           {button && ""}
         </div>
       </nav>                   
+      </>
   );
 }
 
