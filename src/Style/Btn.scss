@@ -1,0 +1,8 @@
+@use '../Style/abstracts/Variables.scss' as *;
+
+btn-container{
+    border : solid 2px $primary-color;
+    border-radius: 15px;
+    background-color: $primary-color;
+    color: white;  
+}

@@ -1,7 +1,10 @@
 import React from 'react'
 import HeaderText from '../Components/HeaderText'
 import '../Style/Association.scss'
+import Btn from '../Components/Btn'
 const Association = () => {
+
+  const link = 'https://www.helloasso.com/associations/wavedoctors/adhesions/formulaire-d-adhesion-a-l-association-wavedoctors/widget-bouton'
   return (
     <div  id="association-section" >
       <div style={{height :20}}></div>
@@ -17,7 +20,7 @@ L´objectif primaire est de préserver la santé des athlètes pratiquant leur p
 <HeaderText text="Nos missions" />
 
 <ul>
-  <li> + Former un maximum de la population civile en gestes de premiers secours et  réanimation cardio-pulmonaire. En effet, les premières minutes d´une urgence vitale peuvent être décisif pour l´avenir de la victime et doivent donc être réalisé par les personnes sur place avant l´arrivée des secours professionnels. Il est donc primordialque chaque citoyen soit en mesure de pratiquer ces premiers gestes. 
+  <li> + Former un maximum de la population civile en gestes de premiers secours et  réanimation cardio-pulmonaire. En effet, les premières minutes d´une urgence vitale peuvent être décisif pour l´avenir de la victime et doivent donc être réalisé par les personnes sur place avant l´arrivée des secours professionnels. Il est donc primordial que chaque citoyen soit en mesure de pratiquer ces premiers gestes. 
 Ils peuvent être facilement et rapidement appris dès le plus jeune âge. WAVEDOCTORS s´engage à former un maximum de personnes sur la base du bénévolat. Pour cela, nous organisons des actions dans les clubs sportifs, les lieux publics, les écoles et entreprises et pendant différents événements sportifs.
 </li>
 <li>
@@ -34,7 +37,8 @@ Ils peuvent être facilement et rapidement appris dès le plus jeune âge. WAVED
 <li>+ Création d´un groupe d´intervention médical intervenant dans des situations hors norme.</li>
 
 </ul>
-
+<div className='d-flex justify-content-end'>
+</div>
        </div>
       </div>
     </div>

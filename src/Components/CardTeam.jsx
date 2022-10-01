@@ -13,9 +13,9 @@ const CardTeam = ({ info }) => {
         "workPlace": "Centre Hospitalier de Dax - Côte d'Argent, France",
         "photo":"asset/Team/francis.png",
         "education": [
-            "Médecin anesthésiste-réanimateur et urgentiste.",
-            "Médecin de la fédération allemande de surf.",
-            "Médecin de montagne et d'expédition."
+            "Médecin anesthésiste-réanimateur et urgentiste",
+            "Médecin de la fédération allemande de surf",
+            "Médecin de montagne et d'expédition"
         ]
     },
     {
@@ -35,7 +35,7 @@ const CardTeam = ({ info }) => {
         "position": "Trésorier de l'association Wavedoctors",
         "workPlace": "Centre Hospitalier de Dax - Côte d'Argent, France",
         "photo":"asset/Team/ben.jpg",
-        "education": ["Médecin anesthésiste-réanimateur."]
+        "education": ["Médecin anesthésiste-réanimateur"]
     },
     {
         "id": "4",
@@ -43,26 +43,26 @@ const CardTeam = ({ info }) => {
         "position": "Trésorière adjointe de l'association Wavedoctors",
         "workPlace": "Centre Hospitalier Universitaire Poite-à-Pitre, Guadeloupe, France",
         "photo":"asset/Team/Christina.jpeg",
-        "education": ["Chirurgien orthopédiste et médecin du sport.","Médecin du sport", "rééducation","aide de kiné"
+        "education": ["Chirurgien orthopédiste et médecin du sport"
     ]},
     {
         "id": "5",
         "name": "Axelle Brassart",
         "position": "secrétaire de l'association Wavedoctors",
         "workPlace": "Centre Hospitalier de Dax - Côte d'Argent, France",
-        "education": ["Infirmière anesthésiste diplômée d'état."]
+        "education": ["Infirmière anesthésiste diplômée d'état"]
     },
     {
         "id": "6",
         "name": "Dr. Alexandre Wittig",
         "position": "secrétaire adjoint de l'association Wavedoctors",
         "workPlace": "Centre Hospitalier de Dax - Côte d'Argent, France",
-        "education": ["Médecin anesthésiste-réanimateur."]
+        "education": ["Médecin anesthésiste-réanimateur"]
     },
     {
         "id": "7",
         "name": "Prof. Dr. Maurice Balke",
-        "position": "Membre",
+        "position": "",
         "photo":"asset/Team/maurice.jpg",
         "workPlace": "Clinique du sport Cologne, Allemagne",
         "education": ["Chirurgien orthopédiste"]
@@ -70,15 +70,15 @@ const CardTeam = ({ info }) => {
     {
         "id": "8",
         "name": "Michael Zirlewagen",
-        "position": "Membre",
+        "position": "",
         "photo":"asset/Team/michael.jpg",
         "workPlace": "Allemagne",
-        "education": ["Ingénieur diplômé en technologie des médias"]
+        "education": ["Président de la fédération de surf allemande","Ingénieur diplômé en technologie des médias"]
     },
     {
         "id": "9",
         "name": "Karl Burr",
-        "position": "Membre",
+        "position": "",
         "photo":"asset/Team/karl.jpg",
 
         "workPlace": "Cabinet Karl Burr, Cologne, Allemagne",
@@ -95,7 +95,7 @@ const CardTeam = ({ info }) => {
             </div>
             <div className="cards__name-header">
               <h5>{data.name}</h5>
-              <p style={{ fontStyle: "italic", color: "lightgray" }} >{data.position}</p>
+              <p style={{ fontStyle: "italic", color: "lightgray" }} >{data.position ? data.position : ""}</p>
             </div>
             <div className="cards__body container" style={{textAlign:"left"}}>
             <p style={{fontSize:12}}>{data.workPlace}</p>

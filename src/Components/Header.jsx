@@ -45,7 +45,7 @@ function Navbar() {
               <a className="nav-links" href='#association-section'>L'association</a>
             </li>
             <li className='nav-item' onClick={closeMobileMenu}>
-              <a className="nav-links" href='#events-section'>Évènements</a>
+              <a className="nav-links" href='#events-section'>Événements</a>
             </li>
             <li className='nav-item' onClick={closeMobileMenu}>
               <a className="nav-links" href='#teams-section'>Qui sommes nous?</a>

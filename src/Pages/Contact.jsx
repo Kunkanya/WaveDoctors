@@ -34,30 +34,30 @@ const Contact = () => {
                 </div>
                 <form ref={form} onSubmit={sendEmail} className="col-sm-12 col-md-6 bg-white  " style={{}}>
                     <div className="form-group m-3">
-                        <label htmlFor="user_name">Nom</label>
+                        <label htmlFor="user_name">Nom et prenom</label>
                         <input type="text"
                             className="form-control"
                             name="user_name"
                             aria-describedby="emailHelp"
-                            placeholder="Votre nom et prenom"
+                            placeholder="nom et prenom"
                             required />
                     </div>
                     <div className="form-group m-3">
-                        <label htmlFor="user_email">Email address</label>
+                        <label htmlFor="user_email">Adresse électronique</label>
                         <input type="email"
                             className="form-control"
                             name="user_email"
                             aria-describedby="user_email"
-                            placeholder="Enter email"
+                            placeholder="ex: me@wavedoctor.org"
                             required />
                     </div>
                     <div className="form-group m-3">
-                        <label htmlFor="subject">Subject</label>
+                        <label htmlFor="subject">Sujet</label>
                         <input type="text"
                             className="form-control"
                             name="subject"
                             aria-describedby="subject"
-                            placeholder="Subject" />
+                            placeholder="sujet" />
                     </div>
                     <div className="form-group m-3">
                         <label htmlFor="message">Messages</label>
@@ -65,7 +65,7 @@ const Contact = () => {
                             className="form-control"
                             name="message"
                             aria-describedby="message"
-                            placeholder="Messages"
+                            placeholder="messages"
                             cols="30" row="30" />
                     </div>
                     <div className="form-group m-3 flex-row justify-content-end">
