@@ -2,9 +2,11 @@ import React from 'react'
 import HeaderText from '../Components/HeaderText'
 import '../Style/Association.scss'
 import Btn from '../Components/Btn'
+import Datas from '../asset/data.json'
+
 const Association = () => {
 
-  const link = 'https://www.helloasso.com/associations/wavedoctors/adhesions/formulaire-d-adhesion-a-l-association-wavedoctors/widget-bouton'
+
   return (
     <div  id="association-section" >
       <div style={{height :20}}></div>
@@ -17,7 +19,7 @@ Notre association wavedoctors est née de nos passions communes : la médecine 
 
 L´objectif primaire est de préserver la santé des athlètes pratiquant leur passion et d´augmenter leur sécurité. Nos membres bénévoles ne sont pas uniquement des professionnels médicaux, mais ayant tout type de compétences humaines ou professionnelles permettant de réaliser nos objectifs.
 
-<HeaderText text="Nos missions" />
+<HeaderText  text="Nos missions"  />
 
 <ul>
   <li> + Former un maximum de la population civile en gestes de premiers secours et  réanimation cardio-pulmonaire. En effet, les premières minutes d´une urgence vitale peuvent être décisif pour l´avenir de la victime et doivent donc être réalisé par les personnes sur place avant l´arrivée des secours professionnels. Il est donc primordial que chaque citoyen soit en mesure de pratiquer ces premiers gestes. 
@@ -37,7 +39,9 @@ Ils peuvent être facilement et rapidement appris dès le plus jeune âge. WAVED
 <li>+ Création d´un groupe d´intervention médical intervenant dans des situations hors norme.</li>
 
 </ul>
-<div className='d-flex justify-content-end'>
+<div className=' d-flex justify-content-center '>
+<Btn text="Devenir membre" link={Datas.memberLink} />
+<Btn text="Faire un don" link={Datas.donateLink} />
 </div>
        </div>
       </div>

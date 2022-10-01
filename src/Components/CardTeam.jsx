@@ -43,7 +43,7 @@ const CardTeam = ({ info }) => {
         "position": "Trésorière adjointe de l'association Wavedoctors",
         "workPlace": "Centre Hospitalier Universitaire Poite-à-Pitre, Guadeloupe, France",
         "photo":"asset/Team/Christina.jpeg",
-        "education": ["Chirurgien orthopédiste et médecin du sport"
+        "education": ["Chirurgien orthopédiste", "Médecin du sport","Médecine physique et de réadaptation"
     ]},
     {
         "id": "5",

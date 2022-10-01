@@ -1,8 +1,29 @@
 @use '../Style/abstracts/Variables.scss' as *;
 
-btn-container{
-    border : solid 2px $primary-color;
-    border-radius: 15px;
-    background-color: $primary-color;
+.btn-container{
+    border : solid 3px $primary-color;
+    border-radius: 10px;
+    background-color: $secondary-color;
     color: white;  
+    width: fit-content;
+    padding: 0.5rem;
+    margin : 0.5rem;
+    font-weight: bold;
+    &:hover{
+        background-color: white;
+        transition: linear all 0.2s;
+        color: $primary-color;
+    }
+}
+
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color: $primary-color;
+    padding:0.5rem;
+    height: 100%;
+    &:hover{
+        transition: linear all 0.1s;
+        color: $primary-color;
+    }
 }

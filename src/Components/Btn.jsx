@@ -4,7 +4,7 @@ const Btn = ({text, link}) => {
 
     const addLinke = (text, link)=>{
         return (
-            <a target="blank" href={link}>{text}</a>
+            <a target="blank" className='link' href={link}>{text}</a>
         )
     }
 

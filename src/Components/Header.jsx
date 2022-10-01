@@ -57,6 +57,9 @@ function Navbar() {
             <li className='nav-item ' onClick={closeMobileMenu}>
               <a target="blank" className="nav-links member" href='https://www.helloasso.com/associations/wavedoctors/adhesions/formulaire-d-adhesion-a-l-association-wavedoctors/widget-bouton'>Devenir membre</a>
             </li>
+            <li className='nav-item ' onClick={closeMobileMenu}>
+              <a target="blank" className="nav-links member" href='https://www.helloasso.com/associations/wavedoctors/formulaires/1/widget'>Don</a>
+            </li>
           </ul>
           {button && ""}
         </div>

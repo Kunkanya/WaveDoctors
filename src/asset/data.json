@@ -1,5 +1,9 @@
 
-{
+{   
+    "memberLink" :"https://www.helloasso.com/associations/wavedoctors/adhesions/formulaire-d-adhesion-a-l-association-wavedoctors/widget-bouton",
+    
+    "donateLink" :"https://www.helloasso.com/associations/wavedoctors/formulaires/1/widget",
+  
     "mainMembers": [
         {
             "id": "1",

@@ -73,7 +73,7 @@ const Contact = () => {
                             className="btn btn-primary "
                             data-bs-toggle="modal"
                             data-bs-target="#myModal" 
-                         >Submit</button>
+                         >Envoyer</button>
                     </div>
                 </form>
             </div>
