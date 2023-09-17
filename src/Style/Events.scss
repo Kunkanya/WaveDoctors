@@ -76,7 +76,7 @@
 
         &-close {
             position: absolute;
-            top: 25%;
+            top: 15%;
             right: 5%;
             z-index: 20 !important;
             cursor: pointer;
@@ -92,7 +92,7 @@
             margin-top:0rem;
 
             @media (max-width:500px) {
-                width: 320px;
+                width: 300px;
                 object-fit: contain;
                 height: auto;
              }
@@ -102,7 +102,7 @@
             position: absolute;
             color: white;
             top: 0;
-            width: 5%;
+            width: 15%;
             height: 100vh;
             cursor: pointer;
             left: 0;
@@ -114,13 +114,11 @@
             position: absolute;
             color: white;
             top: 0;
-            width: 5%;
+            width: 15%;
             height: 100vh;
-            background-color: pink;
             cursor: pointer;
             right: 0;
             @include flex-center;
-
         }
 
         &-icon {
