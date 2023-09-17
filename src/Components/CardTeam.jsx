@@ -89,7 +89,7 @@ const CardTeam = ({ info }) => {
         "id": "10",
         "name": "Wally Walter Gonzalez",
         "position": "",
-        "photo": "asset/Team/wally.jpeg",
+        "photo": "asset/Team/wally.jpg",
         "workPlace": "medicaltraining.berlin, Allemagne",
         "education": ["Kinésithérapeute"]
       },
