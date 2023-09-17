@@ -7,8 +7,8 @@ const Hero = () => {
 
     {
         "photoId": "2",
-        "photoName": "name 2",
-        "path": "asset/events/hero-foto.jpg"
+        "photoName": "hero",
+        "path": "asset/events/17.jpg"
     }
 //    const bg = "asset/logo/background.jpg"
 
