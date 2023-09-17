@@ -55,6 +55,7 @@ const CardTeam = ({ info }) => {
     {
         "id": "6",
         "name": "Dr. Alexandre Wittig",
+        "photo":"asset/Team/alexw.jpg",
         "position": "secrétaire adjoint de l'association Wavedoctors",
         "workPlace": "Centre Hospitalier de Dax - Côte d'Argent, France",
         "education": ["Médecin anesthésiste-réanimateur"]
@@ -80,10 +81,61 @@ const CardTeam = ({ info }) => {
         "name": "Karl Burr",
         "position": "",
         "photo":"asset/Team/karl.jpg",
-
         "workPlace": "Cabinet Karl Burr, Cologne, Allemagne",
         "education": ["Kinésithérapeute"]
-    }
+    },
+    {
+      "id": "10",
+      "name": "Wally Walter Gonzalez",
+      "position": "",
+      "photo":"asset/Team/wally.jpg",
+      "workPlace": "medicaltraining.berlin, Allemagne",
+      "education": ["Kinésithérapeute"]
+    },
+    {
+      "id": "11",
+      "name": "Dr. Timo Nabers",
+      "position": "",
+      "workPlace": "GRN Klinik Sinsheim, Allemagne",
+      "education": ["Chirurgien orthopédiste et traumatologue"]
+    },
+    {
+      "id": "12",
+      "name": "Dr. Julien Brun",
+      "position": "",
+      "workPlace": "France",
+      "education": ["Médecin anesthésiste-réanimateur, médecin de montagne"]
+    },
+    {
+      "id": "13",
+      "name": "Dr. Lise Mattera",
+      "position": "",
+      "photo":"asset/Team/lise.jpg",
+      "workPlace": "Centre Hospitalier de Dax - Côte d´Argent, France",
+      "education": ["Médecin anesthésiste-réanimateur"]
+    },
+    {
+      "id": "14",
+      "name": "Céline Barea",
+      "position": "",
+      "workPlace": "France",
+      "education": ["Infirmière diplômée d'état aux urgences"]
+    },
+    {
+      "id": "15",
+      "name": "Eva Kreyer",
+      "position": "",
+      "workPlace": "Hossegor, France",
+      "education": ["Kinésithérapeute"]
+    },
+    {
+      "id": "16",
+      "name": "Alexia Vignasse",
+      "position": "",
+      "workPlace": "Centre Hospitalier de Dax - Côte d'Argent, France",
+      "education": ["Infirmière anesthésiste diplômée d'état"]
+    },
+  
 ]
   return (
     <>

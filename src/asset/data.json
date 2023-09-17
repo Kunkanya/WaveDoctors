@@ -78,6 +78,13 @@
             "position": "Membre",
             "workPlace": "Allemagne",
             "education": [""]
+        },
+        {
+            "id": "10",
+            "name": "Karl Burr",
+            "position": "Membre",
+            "workPlace": "Allemagne",
+            "education": [""]
         }
     ],
     "jointMembers": [
