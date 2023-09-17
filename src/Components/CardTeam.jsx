@@ -56,7 +56,7 @@ const CardTeam = ({ info }) => {
       {
         "id": "6",
         "name": "Dr. Alexandre Wittig",
-        "photo": "asset/Team/alexw.jpg",
+        "photo": "asset/Team/alexw.jpeg",
         "position": "secrétaire adjoint de l'association Wavedoctors",
         "workPlace": "Centre Hospitalier de Dax - Côte d'Argent, France",
         "education": ["Médecin anesthésiste-réanimateur"]
