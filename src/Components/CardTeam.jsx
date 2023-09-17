@@ -81,7 +81,7 @@ const CardTeam = ({ info }) => {
         "id": "9",
         "name": "Karl Burr",
         "position": "",
-        "photo": "asset/Team/karl.jpeg",
+        "photo": "asset/Team/karl.jpg",
         "workPlace": "Cabinet Karl Burr, Cologne, Allemagne",
         "education": ["Kinésithérapeute"]
       },
