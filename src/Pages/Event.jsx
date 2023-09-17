@@ -2,13 +2,12 @@ import React, { useState } from 'react'
 import HeaderText from '../Components/HeaderText'
 //import datas from '../asset/data.json'
 import '../Style/Events.scss'
-import { FaTimes, FaAngleDoubleLeft } from 'react-icons/fa';
+import { FaTimes, FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
 
 const Event = () => {
 
     const [modal, setModal] = useState(false)
-    const [selectedImage, setSelectedImage] = useState("")
-    const [currentIndex, setCurrentIndex] = useState([])
+    const [selectedImage, setSelectedImage] = useState([])
 
     const datas = [
 
@@ -319,41 +318,53 @@ const Event = () => {
         },
     ]
 
+    const photoLength = datas.length
 
     const handleSelect = (item) => {
-        console.log("item", item)
-        setCurrentIndex(item.photoId)
-        setSelectedImage(item, item.photoId)
+        setSelectedImage(item)
         setModal(true)
-        modalOpen(selectedImage)
+        modalOpen()
     }
 
     const handleClose = () => {
         setModal(false)
     }
 
-    const back = (e) => {
-        console.log("e,", e)
+    const back = () => {
+        if (selectedImage.photoId == 1) {
+            setSelectedImage(datas.find((j) => j.photoId == photoLength))
+        } else {
+            const test = datas.find((i) => i.photoId == parseInt(selectedImage.photoId) - 1)
+            setSelectedImage(test)
+        }
+    }
+    const next = () => {
+        if (selectedImage.photoId == photoLength) {
+            setSelectedImage(datas.find((j) => j.photoId == 1))
+        } else {
+            const test = datas.find((i) => i.photoId == parseInt(selectedImage.photoId) + 1)
+            setSelectedImage(test)
+        }
     }
 
-    const modalOpen = (image) => {
+    const modalOpen = () => {
         return (
             <>
                 <div className="events__modal">
                     <FaTimes className='events__modal-close' onClick={() => handleClose()} />
-                    <div className="events__modal-back" onClick={(e) => back(e)}>
+                    <div className="events__modal-back" onClick={() => back()}>
                         <FaAngleDoubleLeft className='events__modal-icon' />
                     </div>
-                    {/** To improved
-                    <div className="events__modal-prev">
+                    <div className="events__modal-prev" onClick={() => next()}>
                         <FaAngleDoubleRight className='events__modal-icon' />
                     </div>
+                    {/** To improved
 
                     <p key={image.id} style={{ color: "white" }}>{image.photoName}</p>
 
 */}
 
-                    <img key={image.photoId} className="events__modal-image" src={image.path} alt={image.photoName} />
+                    <img key={selectedImage.photoId} className="events__modal-image" src={selectedImage.path} alt={selectedImage.photoName} />
                 </div>
             </>
         )
