@@ -19,7 +19,7 @@ const Vision = () => {
   };
 
   return (
-    <Grid container xs sx={{ bgcolor: "lightgrey", mt: 5, px: 16 }}>
+    <Grid container xs sx={{ bgcolor: "lightgrey", my: 5, px: 16 , pb:5}}>
       <Grid sx={{ height: 20 }}></Grid>
       <HeaderText text="Notre vision?" />
       <Typography paragraph>

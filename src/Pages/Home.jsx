@@ -8,6 +8,7 @@ import Hero from './Hero'
 import Header1 from '../Components/Header'
 import Engagement from './Engagement'
 import Vision from './Vision'
+import Support from './Support'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Team />
       <Vision />
       <Event />
+      <Support />
       <Contact />
       <Footer/>
     </>
