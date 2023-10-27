@@ -5,10 +5,11 @@ import Btn from "../Components/Btn";
 import Datas from "../asset/data.json";
 import { Grid, Typography } from "@mui/material";
 import CardEngagement from "../Components/CardEngagement";
+import MemberSection from "../Components/MemberSection";
 
 const Engagement = () => {
   return (
-    <Grid container spacing={2} sx={{ bgcolor: "#F3F0CA" }}>
+    <Grid container xs spacing={2} sx={{ bgcolor: "lightgrey" }}>
       <Grid item xs={12} spacing={3} sx={{ m: 4, ml: 14 }}>
         <HeaderText text="Nos Engagements" />
         <Grid
@@ -58,7 +59,7 @@ const Engagement = () => {
           />
           <CardEngagement
             avartar="6"
-            title="6. La création d´un groupe d'intervention médicalisé pour des situations sanitaires hors norme et des missions humanitaires"
+            title="La création d´un groupe d'intervention médicalisé pour des situations sanitaires hors norme et des missions humanitaires"
             mainText=""
             link="false"
             expandText=""
@@ -72,6 +73,7 @@ const Engagement = () => {
             médicales essentielles à un large éventail de situations pour le
             bien de la communauté.
           </Typography>
+          <MemberSection />
         </Grid>
       </Grid>
     </Grid>

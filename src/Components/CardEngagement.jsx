@@ -68,27 +68,31 @@ export default function CardEngagement({
         </CardContent>
       )}
       <CardActions disableSpacing>
-        {/**
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
-  
-        <ExpandMore
-          expand={expanded}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-            en savoir plus
-        </ExpandMore>
-  */}
-
-<Grid container xs={12} justifyContent="right" sx={{pr: 6}}>
-        {link === "true" ? (
+        <Grid container xs={12} justifyContent="right" sx={{ pr: 6 }}>
+          {link === "true" ? (
+            <>
+              <Link
+                sx={{
+                  justifyContent: "right",
+                  "&:hover": {
+                    cursor: "pointer",
+                  },
+                }}
+                underline="always"
+                onClick={handleExpandClick}
+              >
+                en savoir plus
+                <ExpandMoreIcon
+                  sx={{
+                    transform: !expanded ? "rotate(0deg)" : "rotate(180deg)",
+                  }}
+                  onClick={handleExpandClick}
+                />
+              </Link>
+            </>
+          ) : (
             <Link
+              href="#"
               sx={{
                 justifyContent: "right",
                 "&:hover": {
@@ -96,28 +100,15 @@ export default function CardEngagement({
                 },
               }}
               underline="always"
-              onClick={handleExpandClick}
             >
               en savoir plus
+              <ExpandMoreIcon />
             </Link>
-        ) : (
-          <Link
-            href="#"
-            sx={{
-              justifyContent: "right",
-              "&:hover": {
-                cursor: "pointer",
-              },
-            }}
-            underline="always"
-          >
-            en savoir plus
-          </Link>
-        )}
-          </Grid>
+          )}
+        </Grid>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
+        <CardContent sx={{ bgcolor: "#F3F0CA", my: 3, mx: 8, borderRadius: 2 }}>
           <Typography paragraph>{expandText}</Typography>
         </CardContent>
       </Collapse>

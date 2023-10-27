@@ -2,6 +2,7 @@
 
 .team{
         display: grid;
+        margin-top: 20px;
         grid-template-columns: repeat(3, 1fr);
         row-gap: 1rem;
         column-gap: 1rem;

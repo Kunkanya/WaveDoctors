@@ -5,14 +5,17 @@ import "../Style/Team.scss";
 import Datas from "../asset/data.json";
 import Btn from "../Components/Btn";
 import { Typography, Link, CardContent, Collapse, Grid } from "@mui/material";
+import MemberSection from "../Components/MemberSection";
 
-//import foto from '../asset/20190511_113614.jpg'
-//<div className='container-fluid m-2 ' >
 const Team = () => {
   const [expanded, setExpanded] = React.useState(false);
+  const [expandedTeam, setExpandedTeam] = React.useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
+  };
+  const handleExpandTeam = () => {
+    setExpandedTeam(!expandedTeam);
   };
 
   return (
@@ -27,7 +30,7 @@ const Team = () => {
         spécialités médicales, des kinésithérapeutes ainsi que des maîtres
         nageurs sauveteurs et secouristes qualifiés.
       </Typography>
-      <Grid container xs={12} justifyContent="right" sx={{ pr: 6 }}>
+      <Grid container xs={12} justifyContent="right">
         <Link
           sx={{
             justifyContent: "right",
@@ -41,22 +44,10 @@ const Team = () => {
           en savoir plus
         </Link>
       </Grid>
-      <Grid container xs={12} justifyContent="right" sx={{ pr: 6 }}>
-        <Link
-          sx={{
-            justifyContent: "right",
-            "&:hover": {
-              cursor: "pointer",
-            },
-          }}
-          underline="always"
-          onClick={handleExpandClick}
-        >
-          Voir l'équipe
-        </Link>
-      </Grid>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent sx={{bgcolor: '#F3F0CA' ,width: '95%'}}>
+        <CardContent
+          sx={{ bgcolor: "#F3F0CA", width: "100%", mt: 3, borderRadius: 2 }}
+        >
           <Typography paragraph>
             {" "}
             D'autres membres apportent des compétences variées qui soutiennent
@@ -71,15 +62,29 @@ const Team = () => {
             mobiliser une équipe multidisciplinaire hautement qualifiée pour
             atteindre nos objectifs.
           </Typography>
+
+          <Grid container xs={12} justifyContent="right" sx={{ pr: 6 }}>
+            <Link
+              sx={{
+                justifyContent: "right",
+                "&:hover": {
+                  cursor: "pointer",
+                },
+              }}
+              underline="always"
+              onClick={handleExpandTeam}
+            >
+              Voir l'équipe
+            </Link>
+          </Grid>
+          <Collapse in={expandedTeam} timeout="auto" unmountOnExit>
+            <div className="team">
+              <CardTeam />
+            </div>
+          </Collapse>
         </CardContent>
       </Collapse>
-      <div className="team">
-        <CardTeam />
-      </div>
-      <div className=" d-flex mt-3 justify-content-center ">
-        <Btn text="Devenir membre" link={Datas.memberLink} />
-        <Btn text="Faire un don" link={Datas.donateLink} />
-      </div>
+      <MemberSection />
     </div>
   );
 };
