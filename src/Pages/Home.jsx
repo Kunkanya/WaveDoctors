@@ -6,6 +6,7 @@ import Contact from './Contact'
 import Footer from '../Components/Footer'
 import Hero from './Hero'
 import Header1 from '../Components/Header'
+import Engagement from './Engagement'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Header1/>
       <Hero />
       <Association />
+      <Engagement />
       <Event />
       <Team />
       <Contact />
