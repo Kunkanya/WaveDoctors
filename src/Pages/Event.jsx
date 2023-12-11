@@ -375,7 +375,7 @@ const Event = () => {
             <div style={{ height: 20 }}></div>
             <div className="container">
                 <div className="events">
-                    <HeaderText text="Événements" />
+                    <HeaderText text="Galerie" />
                     <div className="events__container container">
                         {datas.map((item) => {
                             return (

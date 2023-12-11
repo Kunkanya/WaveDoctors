@@ -6,6 +6,9 @@ import Contact from './Contact'
 import Footer from '../Components/Footer'
 import Hero from './Hero'
 import Header1 from '../Components/Header'
+import Engagement from './Engagement'
+import Vision from './Vision'
+import Support from './Support'
 
 const Home = () => {
   return (
@@ -13,8 +16,11 @@ const Home = () => {
       <Header1/>
       <Hero />
       <Association />
-      <Event />
+      <Engagement />
       <Team />
+      <Vision />
+      <Event />
+      <Support />
       <Contact />
       <Footer/>
     </>
